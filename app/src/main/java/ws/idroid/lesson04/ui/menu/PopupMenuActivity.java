@@ -33,7 +33,6 @@ public class PopupMenuActivity extends AppCompatActivity implements PopupMenu
             case R.id.exit:
                 finish();
                 break;
-
         }
 
         return false;

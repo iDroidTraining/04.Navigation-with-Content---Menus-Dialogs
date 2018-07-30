@@ -7,10 +7,14 @@ import android.view.View;
 import android.widget.*;
 
 import ws.idroid.lesson04.R;
+import ws.idroid.lesson04.ui.dialog.DialogsActivity;
+import ws.idroid.lesson04.ui.menu.PopupMenuActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private Button btnGo;
     private EditText edtName;
+    private Button btnDialogs;
+    private Button btnMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +27,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void initViews() {
         btnGo = findViewById(R.id.btn_main_go);
         edtName = findViewById(R.id.et_main_name);
+        btnDialogs = findViewById(R.id.btn_main_dialogs);
+        btnMenu = findViewById(R.id.btn_main_menu);
+        btnDialogs.setOnClickListener(v -> startActivity(new Intent(MainActivity.this,
+                DialogsActivity.class)));
+        btnMenu.setOnClickListener(v -> startActivity(new Intent(MainActivity.this,
+                PopupMenuActivity.class)));
     }
 
     @Override
