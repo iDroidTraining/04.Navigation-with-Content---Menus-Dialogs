@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/restart"
+        android:icon="@android:drawable/btn_star"
+        android:title="@string/restart"
+        >
+        <menu>
+            <item
+                android:id="@+id/sub1"
+                android:title="@string/sub_item_1"/>
+
+        </menu>
+    </item>
+
+
+    <item
+        android:id="@+id/exit"
+        android:icon="@android:drawable/ic_delete"
+        android:title="@string/exit"
+
+        />
+
+</menu>
